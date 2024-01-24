@@ -17,6 +17,11 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('number');
+            $table->string('fb_url');
+            $table->string('inst_url');
+            $table->string('x_url');
+            // $table->enum('role', [']) por definir
             $table->rememberToken();
             $table->timestamps();
         });
